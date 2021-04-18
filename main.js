@@ -164,13 +164,13 @@ $(function () {
         localStorage.setItem('currentSongId', 0)
         var aud = $('.audio-class')[0];
         setInterval (function () {
-            var posMultiple=(500/(aud.duration)).toFixed();
-            var posWidth=aud.currentTime.toFixed()*posMultiple+"px";
+            var posMultiple=(500/(aud.duration));
+            var posWidth=aud.currentTime*posMultiple+"px";
             console.log(posWidth)
             progressPos.css({
                 'width':posWidth,            
             })
-        },500)
+        },1000)
     }
 
 })
