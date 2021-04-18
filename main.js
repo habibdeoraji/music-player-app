@@ -164,7 +164,7 @@ $(function () {
         localStorage.setItem('currentSongId', 0)
         var aud = $('.audio-class')[0];
         setInterval (function () {
-            var posMultiple=(550/(aud.duration)).toFixed();
+            var posMultiple=(500/(aud.duration)).toFixed();
             var posWidth=aud.currentTime.toFixed()*posMultiple+"px";
             console.log(posWidth)
             progressPos.css({
