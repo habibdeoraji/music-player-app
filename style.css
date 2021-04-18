@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+body {
+    margin: 0;
+    max-height: 100vh;
+    background-image: url(https://blog.hdwallsource.com/wp-content/uploads/2014/11/gradient-26052-26737-hd-wallpapers.jpg.png);
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    margin: 0;
+    margin-top: 20px;
+    font-size:36px;
+    color:rgb(150, 20, 107);
+    font-family: 'Original Surfer', cursive;
+}
+
+#main-container {
+    display: flex;
+    width: 70%;
+    min-width: 800px;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, #BCBCE9, rgb(210, 210, 242))
+}
+
+#left-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.song-album-cover {
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+    margin-top: 10px
+}
+
+
+.progress-bar {
+    width: 500px;
+    height:10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color:white;
+    text-align:center;
+    align-items: center;
+    display:flex
+
+}
+
+.progress-pos{
+    background-color:rgb(14, 193, 224);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 400px;
+    height:10px
+}
+
+.song-buttons-wrapper {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.shuffle-button,
+.play-button,
+.next-button,
+.prev-button,
+.repeat-button {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.song-buttons-wrapper i:hover {
+    opacity: 1;
+
+}
+
+.play-button {
+    font-size: 48px;
+}
+
+
+.current-song-track {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+}
+
+
+.button-active {
+    opacity: 1;
+    color: black;
+}
+
+.current-song-artist {
+    font-size: 20px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    font-weight: 300;
+    color: black
+}
+
+
+
+
+#right-section {
+    width: 35%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 0px;
+    border-left: 1px solid gray;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+
+
+/* Song Card */
+
+.song-card {
+    width: 100%;
+    display: flex;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+.song-card:hover .artist-track-wrapper {
+    opacity: 1
+}
+
+.album-cover {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.artist-track-wrapper {
+    margin-left: 20px;
+    text-align: left;
+    opacity: 0.6
+}
+
+
+
+.song-track {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+
+}
