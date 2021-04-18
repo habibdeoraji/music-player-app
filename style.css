@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
 body {
     margin: 0;
     max-height: 100vh;
@@ -9,11 +10,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1{
+h1 {
     margin: 0;
     margin-top: 20px;
-    font-size:36px;
-    color:rgb(150, 20, 107);
+    font-size: 36px;
+    color: rgb(150, 20, 107);
     font-family: 'Original Surfer', cursive;
 }
 
@@ -49,22 +50,21 @@ h1{
 
 .progress-bar {
     width: 500px;
-    height:10px;
+    height: 10px;
     border-radius: 5px;
     margin-top: 20px;
-    background-color:white;
-    text-align:center;
+    background-color: white;
+    text-align: center;
     align-items: center;
-    display:flex
-
+    display: flex
 }
 
-.progress-pos{
-    background-color:rgb(14, 193, 224);
+.progress-pos {
+    background-color: rgb(14, 193, 224);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     width: 400px;
-    height:10px
+    height: 10px
 }
 
 .song-buttons-wrapper {
@@ -171,4 +171,50 @@ h1{
     font-weight: 700;
     margin: 0;
 
+}
+
+
+
+/* Mobile responsive */
+
+
+@media(max-width:500px) {
+    body {
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding-left: 0;
+        padding: 0;
+    }
+    h1{
+        text-align: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 100px */
+        /* margin-top: 0px; */
+        margin-left: 200px;
+        width: 100%;
+    }
+
+    #main-container {
+        width:100%;
+        /* margin-left: 10%;
+        margin-right: 10%; */
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    #left-section{
+        width: 100%;
+        border-bottom: 2px solid black;
+        margin-bottom: 20px;
+    }
+
+    #right-section{
+        border: none;
+        width: 100%;
+        padding: 20px;
+    }
 }
